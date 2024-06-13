@@ -3,7 +3,12 @@
 /Client/[Tt]emp
 /Client/[Bb]uild/
 /Client/[Bb]uilds/
-/Client//[Ll]ogs/
+/Client/[Ll]ogs/
+/Client/[Oo]bj/
+/Client/[Bb]uild/
+/Client/[Bb]uilds/
+/Client/[Ll]ogs/
+
 *.csproj
 *.sln
 

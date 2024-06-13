@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{e386446f-8c81-de35-5278-ad5983f1a885}</ProjectGuid>
+    <ProjectGuid>{1bae22e7-00bf-7319-5bbe-188e81641616}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -41,78 +41,78 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Count.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\GroupJoin.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\GroupBy.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Distinct.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Return.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Do.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToObservable.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToDictionary.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\OrderBy.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SelectMany.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Select.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\First.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ElementAt.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToLookup.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Pairwise.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\CombineLatest.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Repeat.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Subscribe.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\OfType.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\AsyncEnumeratorBase.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\TakeWhile.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Cast.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Single.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\MinMax.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\TakeUntilCanceled.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Buffer.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Contains.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToLookup.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Empty.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\TakeUntil.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Take.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Range.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Min.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SequenceEqual.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\AppendPrepend.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\DefaultIfEmpty.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Never.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SkipUntil.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToUniTaskAsyncEnumerable.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Zip.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Except.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Aggregate.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Union.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Throw.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SkipLast.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\TakeLast.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Empty.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToHashSet.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ForEach.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SkipUntilCanceled.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Concat.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\UnityExtensions\Timer.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Join.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Repeat.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Subscribe.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Cast.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Never.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Union.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\TakeLast.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\AsUniTaskAsyncEnumerable.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToDictionary.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ElementAt.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\MinMax.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToUniTaskAsyncEnumerable.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Where.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\GroupBy.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\First.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\OfType.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Except.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\DistinctUntilChanged.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Create.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Publish.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Throw.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ForEach.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\All.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Sum.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Max.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Publish.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SkipWhile.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Reverse.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Last.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\AsUniTaskAsyncEnumerable.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToList.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Any.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Join.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Range.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\DefaultIfEmpty.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Zip.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\TakeUntilCanceled.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Aggregate.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Skip.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\GroupJoin.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Do.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Single.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SkipLast.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToArray.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\UnityExtensions\EveryValueChanged.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Where.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\LongCount.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Average.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\TakeWhile.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Contains.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SkipUntil.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Create.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Reverse.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\UnityExtensions\EveryValueChanged.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\UnityExtensions\EveryUpdate.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Pairwise.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SequenceEqual.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToList.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Distinct.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToObservable.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\CombineLatest.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\ToHashSet.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Intersect.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Return.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SelectMany.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Concat.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Last.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\LongCount.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Buffer.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Any.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Queue.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Count.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\OrderBy.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Min.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\AppendPrepend.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\UnityExtensions\Timer.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\SkipWhile.cs" />
      <None Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\CombineLatest.tt" />
      <None Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\Average.tt" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Linq\UnityExtensions" />
@@ -382,43 +382,43 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.TextureAssets">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -808,15 +808,15 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UniTask.csproj">
-      <Project>{4ab327b7-45b6-1f64-25b7-dfe73d799285}</Project>
+      <Project>{122a9434-3d85-f474-b766-201e3676b0c8}</Project>
       <Name>UniTask</Name>
     </ProjectReference>
   </ItemGroup>

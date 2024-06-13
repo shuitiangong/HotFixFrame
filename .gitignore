@@ -1,5 +1,11 @@
 # Unity3D library
 /Client/Library
+/Client/[Tt]emp
+/Client/[Bb]uild/
+/Client/[Bb]uilds/
+/Client//[Ll]ogs/
+*.csproj
+*.sln
 
 # # This .gitignore file should be placed at the root of your Unity project directory
 # #
@@ -49,11 +55,6 @@
 # *.mdb
 # *.opendb
 # *.VC.db
-
-# # Unity3D generated meta files
-# *.pidb.meta
-# *.pdb.meta
-# *.mdb.meta
 
 
 # # Unity3D generated file on crash reports

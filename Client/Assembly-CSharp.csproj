@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{55581ce2-4bfa-0833-d2f9-49881591b7a2}</ProjectGuid>
+    <ProjectGuid>{8441f412-22a4-275f-22e6-507969043f15}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -41,44 +41,44 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\UrpDemo\Scripts\SimpleCameraController.cs" />
-     <Compile Include="Assets\UrpDemo\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmDownloadPackageOver.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmUpdaterDone.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UIHomeWindow.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\PatchWindow.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\Boot.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmInitializePackage.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\Behaviour\ApplicationQuit.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\UserEventDefine.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityEnemy.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\Behaviour\BackgroundScroller.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\StreamingAssetsHelper\BuildinFileManifest.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\UserEventDefine.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityEffect.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\BattleEventDefine.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\BattleRoom.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmInitializePackage.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic\GameManager.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Runtime\GameObjectAssetReference.cs" />
+     <Compile Include="Assets\UrpDemo\Scripts\SimpleCameraController.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmUpdatePackageVersion.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UILoadingWindow.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmUpdatePackageManifest.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityBullet.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\PatchEventDefine.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityAsteroid.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmCreatePackageDownloader.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UIBattleWindow.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic\SceneBattle.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\BattleEventDefine.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmUpdatePackageVersion.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmDownloadPackageFiles.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmUpdatePackageManifest.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic\SceneHome.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UILoadingWindow.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityBullet.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UIAboutWindow.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityPlayer.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\PatchOperation.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\StreamingAssetsHelper\StreamingAssetsDefine.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityEffect.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmCreatePackageDownloader.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmClearPackageCache.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\PatchEventDefine.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\SceneEventDefine.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\StreamingAssetsHelper\StreamingAssetsHelper.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\BattleRoom.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic\GameManager.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmDownloadPackageOver.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Runtime\AssetOperationHandleExtension.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Runtime\GameObjectAssetReference.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmUpdaterDone.cs" />
+     <Compile Include="Assets\UrpDemo\TutorialInfo\Scripts\Readme.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UIHomeWindow.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\Behaviour\BackgroundScroller.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic\SceneHome.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\Boot.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\StreamingAssetsHelper\BuildinFileManifest.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\SceneEventDefine.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\PatchWindow.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\PatchOperation.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Runtime\LoadAssetsByTagOperation.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode\FsmClearPackageCache.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\StreamingAssetsHelper\StreamingAssetsHelper.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UIAboutWindow.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\StreamingAssetsHelper\StreamingAssetsDefine.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\ShaderVariants" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\Audio" />
@@ -426,22 +426,22 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -830,187 +830,187 @@
      <Reference Include="System.Xml.XPath.XDocument">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="PPv2URPConverters">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.TextMeshPro">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Searcher.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.SpatialTracking">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Mathematics">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Tilemap.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="PPv2URPConverters">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualStudio.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Core.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Core.Runtime">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Core">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.Universal.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Shared.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline.Editor">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.SpatialTracking">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UniFramework.Event.csproj">
-      <Project>{d5867b92-7e7a-ba7c-ffdb-dd24b04be18d}</Project>
-      <Name>UniFramework.Event</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniFramework.Machine.csproj">
-      <Project>{bee2ebc8-8c82-8071-a8ae-94f312acac19}</Project>
-      <Name>UniFramework.Machine</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniFramework.Utility.csproj">
-      <Project>{dde883ee-acae-a9e1-ecae-10457f601799}</Project>
-      <Name>UniFramework.Utility</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.Addressables.csproj">
-      <Project>{ad02c468-66b7-573d-a73b-f8e57116a7c3}</Project>
-      <Name>UniTask.Addressables</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.DOTween.csproj">
-      <Project>{d14c6a4f-1026-232c-09f7-acfa73867234}</Project>
-      <Name>UniTask.DOTween</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.csproj">
-      <Project>{4ab327b7-45b6-1f64-25b7-dfe73d799285}</Project>
-      <Name>UniTask</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.TextMeshPro.csproj">
-      <Project>{adedc4d0-68de-0302-e4eb-284a19ed46e8}</Project>
-      <Name>UniTask.TextMeshPro</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.Linq.csproj">
-      <Project>{e386446f-8c81-de35-5278-ad5983f1a885}</Project>
-      <Name>UniTask.Linq</Name>
-    </ProjectReference>
     <ProjectReference Include="YooAsset.Editor.csproj">
-      <Project>{36b6876b-e45f-c2ad-93c9-99f5a02699d8}</Project>
+      <Project>{8b0eb05a-e832-3f7b-463f-6bed0d05859a}</Project>
       <Name>YooAsset.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.ScriptableBuildPipeline.csproj">
-      <Project>{85c339f4-7dfe-5a58-9d4b-01e1521a073a}</Project>
-      <Name>Unity.ScriptableBuildPipeline</Name>
+    <ProjectReference Include="UniFramework.Event.csproj">
+      <Project>{a880cea0-c091-021c-17e5-72862b422f2f}</Project>
+      <Name>UniFramework.Event</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{0994afac-7be2-100c-7f26-fa89637f615f}</Project>
+      <Name>UniTask.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="YooAsset.csproj">
-      <Project>{5c9988b2-e1c3-7d5a-ef3d-2a6cc37854a2}</Project>
+      <Project>{cfdb1a83-9f43-7d59-49e2-6d192ea8a9dc}</Project>
       <Name>YooAsset</Name>
     </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{edf9bd84-a96c-3edf-a9da-3d0eac9bb002}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniFramework.Machine.csproj">
+      <Project>{10673f21-7ad3-1e2f-c73f-bb9413dc72d2}</Project>
+      <Name>UniFramework.Machine</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{814740d6-86fa-cd99-5b8c-dfa02f017587}</Project>
+      <Name>UniTask.DOTween</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{1bae22e7-00bf-7319-5bbe-188e81641616}</Project>
+      <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniFramework.Utility.csproj">
+      <Project>{a83c9481-d5c6-3068-db4f-3836ebf8175f}</Project>
+      <Name>UniFramework.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.ScriptableBuildPipeline.csproj">
+      <Project>{08454660-2aee-81bd-3a4a-ec280ef6ed74}</Project>
+      <Name>Unity.ScriptableBuildPipeline</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
-      <Project>{943271bd-dd4f-6560-be28-197e2b723891}</Project>
+      <Project>{2ec57df1-b9d7-6a73-9fb0-464ab69ced37}</Project>
       <Name>Unity.ScriptableBuildPipeline.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{122a9434-3d85-f474-b766-201e3676b0c8}</Project>
+      <Name>UniTask</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

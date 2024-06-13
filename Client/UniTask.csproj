@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4ab327b7-45b6-1f64-25b7-dfe73d799285}</ProjectGuid>
+    <ProjectGuid>{122a9434-3d85-f474-b766-201e3676b0c8}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -41,80 +41,80 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CompilerServices\AsyncUniTaskMethodBuilder.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\TriggerEvent.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\ExceptionExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\External\YooAsset\OperationHandleBaseExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Threading.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\Error.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Bridge.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskScheduler.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskVoid.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\TimeoutController.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAll.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\TaskPool.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\Error.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\EnumerableAsyncExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityBindingExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Factory.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncTriggerBase.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\AsyncReactiveProperty.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityWebRequestException.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\WeakDictionary.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Channel.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\AsyncLazy.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ValueStopwatch.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAny.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\PlayerLoopTimer.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ContinuationQueue.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\IUniTaskSource.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\PooledDelegate.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Progress.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\EnumeratorAsyncExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAny.Generated.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.uGUI.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\PlayerLoopHelper.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\MinimumQueue.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAll.Generated.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.MonoBehaviour.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.AssetBundleRequestAllAssets.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskCompletionSource.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\PlayerLoopRunner.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CompilerServices\StateMachineRunner.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\DiagnosticsExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\StatePool.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskSynchronizationContext.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CompilerServices\AsyncMethodBuilderAttribute.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.AsyncGPUReadback.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ArrayPool.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncAwakeTrigger.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncStartTrigger.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.Jobs.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskObservableExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskExtensions.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CompilerServices\AsyncUniTaskVoidMethodBuilder.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WaitUntil.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Run.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\RuntimeHelpersAbstraction.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\TriggerEvent.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Threading.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\TaskPool.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ArrayPool.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskExtensions.Shorthand.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ContinuationQueue.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\EnumeratorAsyncExtensions.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ArrayUtil.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\ExceptionExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\AsyncLazy.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\PlayerLoopHelper.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CompilerServices\StateMachineRunner.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\StatePool.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.Jobs.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CancellationTokenExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\UnityEqualityComparer.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\External\YooAsset\AsyncOperationBaseExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\UnityWebRequestExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CompilerServices\AsyncUniTaskMethodBuilder.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Channel.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\IUniTaskSource.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Progress.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.uGUI.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CompilerServices\AsyncMethodBuilderAttribute.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\IUniTaskAsyncEnumerable.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\AsyncUnit.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CancellationTokenSourceExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Delay.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\MoveNextSource.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncTriggerExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CancellationTokenExtensions.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\_InternalVisibleTo.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\MonoBehaviourMessagesTriggers.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ArrayPoolUtil.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\TaskTracker.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\RuntimeHelpersAbstraction.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncTriggerBase.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\WeakDictionary.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ValueStopwatch.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.AssetBundleRequestAllAssets.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WaitUntil.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\MoveNextSource.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAny.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskExtensions.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncDestroyTrigger.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\External\YooAsset\AsyncOperationBaseExtensions.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\UnityEqualityComparer.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\UnityWebRequestExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAny.Generated.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CancellationTokenSourceExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskVoid.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityBindingExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncStartTrigger.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskScheduler.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\TimeoutController.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAll.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Factory.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\MonoBehaviourMessagesTriggers.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\MinimumQueue.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskObservableExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncTriggerExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\TaskTracker.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\CancellationTokenEqualityComparer.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\PooledDelegate.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.MonoBehaviour.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskCompletionSource.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Triggers\AsyncAwakeTrigger.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityWebRequestException.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTaskSynchronizationContext.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Delay.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\PlayerLoopTimer.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\PlayerLoopRunner.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.Run.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\External\YooAsset\OperationHandleBaseExtensions.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\AsyncReactiveProperty.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAll.Generated.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.AsyncGPUReadback.cs" />
+     <Compile Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal\ArrayPoolUtil.cs" />
      <None Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UniTask.WhenAny.Generated.tt" />
      <None Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\UnityAsyncExtensions.tt" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2\UniTask Sample\UniTask\Runtime\Internal" />
@@ -389,43 +389,43 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.TextureAssets">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -815,15 +815,15 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="YooAsset.csproj">
-      <Project>{5c9988b2-e1c3-7d5a-ef3d-2a6cc37854a2}</Project>
+      <Project>{cfdb1a83-9f43-7d59-49e2-6d192ea8a9dc}</Project>
       <Name>YooAsset</Name>
     </ProjectReference>
   </ItemGroup>

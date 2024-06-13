@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{36b6876b-e45f-c2ad-93c9-99f5a02699d8}</ProjectGuid>
+    <ProjectGuid>{8b0eb05a-e832-3f7b-463f-6bed0d05859a}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -41,122 +41,122 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\EditorDefine.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\UIElements\UIElementsExtension.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IFilterRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskCreateManifest_BBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskCreatePackage_BBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IActiveRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\UIElements\UIElementsTools.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildAssetInfo.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildParameters.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\BuildLogger.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleBuilder.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildParametersContext.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskGetBuildMap.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\VisualViewers\DebuggerAssetListViewer.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\VisualViewers\DebuggerBundleListViewer.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleSimulateBuilder.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildMapContext.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorPackage.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\ErrorCode.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\HomePage.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\SettingLoader.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\AssetBundleInspector.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\VisualViewers\ScriptableBuildPipelineViewer.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\AssetBundleDebuggerWindow.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\AssetBundleRecorder.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\EBuildMode.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\Common\AssetInfo.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskUpdateBundleInfo.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IAddressRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\VisualViewers\BuildPipelineViewerBase.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskGetBuildMap_BBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\VisualViewers\ReporterSummaryViewer.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskPrepare_SBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuiltinBuildParameters.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\IBuildPipeline.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\DefaultEncryption.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultIgnoreRule.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskCopyBuildinFiles_BBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskUpdateBundleInfo_RFBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskVerifyBuildResult_SBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\EBuildPipeline.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskBuilding_BBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\EBuildinFileCopyOption.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\ScriptableBuildParameters.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\ReportAssetInfo.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultPackRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultFilterRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\VisualViewers\RawfileBuildpipelineViewer.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskCreateReport_SBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskGetBuildMap_SBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\RawFileBuildPipeline.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\EditorTools.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\RuleDisplayName.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskVerifyBuildResult_BBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\AssetBundleReporterWindow.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskEncryption_BBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\UIElements\UxmlLoader.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskBuilding_RFBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\ECollectorType.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectCommand.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\ScriptableBuildPipeline.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\SBPBuildTasks.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleBuilderHelper.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DisplayNameAttribute.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IPackRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorSettingData.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskCreatePackage_SBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectResult.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskCreateManifest_RFBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleBuilderSetting.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\ReportIndependAsset.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\BuildReport.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollector.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskCreateManifest.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\UIElements\UIElementsDefine.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleBuilderWindow.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleBuilder.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\VisualViewers\DebuggerBundleListViewer.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\ErrorCode.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultIgnoreRule.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\RawFileBuildPipeline.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskCopyBuildinFiles_RFBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuiltinBuildPipeline.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskCreateReport.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskGetBuildMap_RFBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IFilterRule.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskGetBuildMap.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\VisualViewers\ReporterSummaryViewer.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskBuilding_BBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\ReportAssetInfo.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\EditorTools.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\UIElements\UxmlLoader.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskCreatePackage_RFBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskUpdateBundleInfo_SBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultActiveRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskCreateManifest_RFBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleBuilderSetting.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\RawFileBuildParameters.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\RemotePlayerSession.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskUpdateBundleInfo_BBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\ReportSummary.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\SettingLoader.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IAddressRule.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskPrepare_SBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskVerifyBuildResult_SBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskVerifyBuildResult_BBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskCreateReport_BBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectAssetInfo.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskCopyBuildinFiles_SBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\ReportBundleInfo.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\VisualViewers\BuiltinBuildPipelineViewer.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskEncryption_SBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\IBuildTask.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskBuilding_SBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildBundleInfo.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskPrepare_BBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\BuildResult.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskCreateManifest_BBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskCreatePackage_BBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildMapContext.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\AssetBundleInspector.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\IBuildPipeline.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\VisualViewers\RawfileBuildpipelineViewer.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskCreateReport_SBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskGetBuildMap_SBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskEncryption_BBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleBuilderHelper.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultAddressRule.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskEncryption.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskCopyBuildinFiles.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskCreateManifest_SBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorConfig.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\EditorDefine.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IActiveRule.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildParameters.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\AssetBundleDebuggerWindow.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\AssetBundleRecorder.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskUpdateBundleInfo.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\VisualViewers\BuildPipelineViewerBase.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultPackRule.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectCommand.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\ECompressOption.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskCreateReport_RFBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\UIElements\UIElementsExtension.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\UIElements\UIElementsTools.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildParametersContext.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\VisualViewers\DebuggerAssetListViewer.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleSimulateBuilder.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorPackage.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\HomePage.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskUpdateBundleInfo_RFBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\EBuildinFileCopyOption.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultFilterRule.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IPackRule.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DisplayNameAttribute.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskCreatePackage_SBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\BuildRunner.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\VisualViewers\ReporterBundleListViewer.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\IContextObject.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\ReportIndependAsset.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\ECompressOption.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskCopyBuildinFiles_RFBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectAssetInfo.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\BuildReport.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollector.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskCreateReport.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorSetting.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskCopyBuildinFiles_SBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuiltinBuildPipeline.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskCreateReport_RFBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\DefaultRules\DefaultAddressRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\ReportBundleInfo.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskEncryption.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskEncryption_SBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\VisualViewers\BuiltinBuildPipelineViewer.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\ReportSummary.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskCopyBuildinFiles.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\IBuildTask.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorWindow.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\EFileNameStyle.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\BuildContext.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskBuilding_SBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildBundleInfo.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BaseTasks\TaskCreateManifest.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\VisualViewers\ReporterAssetListViewer.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\BuiltinBuildPipeline\BuildTasks\TaskPrepare_BBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskPrepare_RFBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\BuildTasks\TaskCreateManifest_SBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorGroup.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskGetBuildMap_RFBP.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\BuildResult.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorConfig.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildAssetInfo.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildSystem\BuildLogger.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\VisualViewers\ScriptableBuildPipelineViewer.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\DefaultEncryption.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\EBuildPipeline.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\RuleDisplayName.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskBuilding_RFBP.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\ScriptableBuildPipeline.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\ScriptableBuildPipeline\SBPBuildTasks.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\AssetBundleCollectorSettingData.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectResult.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\RawFileBuildParameters.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\VisualViewers\ReporterAssetListViewer.cs" />
+     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\BuildPipeline\RawFileBuildPipeline\BuildTasks\TaskPrepare_RFBP.cs" />
      <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleCollector\CollectRules\IIgnoreRule.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\UIElements\UIElementsDefine.cs" />
-     <Compile Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleBuilder\AssetBundleBuilderWindow.cs" />
      <None Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleReporter\AssetBundleReporterWindow.uxml" />
      <Folder Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\VisualViewers" />
      <None Include="Assets\Plugin\com.tuyoogame.yooasset@2.1.2\Editor\AssetBundleDebugger\VisualViewers\DebuggerAssetListViewer.uxml" />
@@ -457,46 +457,46 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.TextureAssets">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.collab-proxy@2.0.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.burst@1.8.2\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>D:\study\HotFixDemo\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -886,29 +886,29 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.TestRunner">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.TestRunner">
-     <HintPath>D:\study\HotFixDemo\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.TestRunner">
+     <HintPath>D:\study\HotFixFrame\Client\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="YooAsset.csproj">
-      <Project>{5c9988b2-e1c3-7d5a-ef3d-2a6cc37854a2}</Project>
+      <Project>{cfdb1a83-9f43-7d59-49e2-6d192ea8a9dc}</Project>
       <Name>YooAsset</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ScriptableBuildPipeline.csproj">
-      <Project>{85c339f4-7dfe-5a58-9d4b-01e1521a073a}</Project>
+      <Project>{08454660-2aee-81bd-3a4a-ec280ef6ed74}</Project>
       <Name>Unity.ScriptableBuildPipeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
-      <Project>{943271bd-dd4f-6560-be28-197e2b723891}</Project>
+      <Project>{2ec57df1-b9d7-6a73-9fb0-464ab69ced37}</Project>
       <Name>Unity.ScriptableBuildPipeline.Editor</Name>
     </ProjectReference>
   </ItemGroup>

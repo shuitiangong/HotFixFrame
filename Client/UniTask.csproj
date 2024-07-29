@@ -63,7 +63,6 @@
      <Compile Include="Assets\Plugins\UniTask\Runtime\UnityAsyncExtensions.Jobs.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\CancellationTokenExtensions.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\Internal\UnityEqualityComparer.cs" />
-     <Compile Include="Assets\Plugins\UniTask\Runtime\External\YooAsset\AsyncOperationBaseExtensions.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\Internal\UnityWebRequestExtensions.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\CompilerServices\AsyncUniTaskMethodBuilder.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\Channel.cs" />
@@ -110,23 +109,16 @@
      <Compile Include="Assets\Plugins\UniTask\Runtime\PlayerLoopTimer.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\Internal\PlayerLoopRunner.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\UniTask.Run.cs" />
-     <Compile Include="Assets\Plugins\UniTask\Runtime\External\YooAsset\OperationHandleBaseExtensions.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\AsyncReactiveProperty.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\UniTask.WhenAll.Generated.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\UnityAsyncExtensions.AsyncGPUReadback.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\Internal\ArrayPoolUtil.cs" />
-     <None Include="Assets\Plugins\UniTask\Runtime\UniTask.WhenAny.Generated.tt" />
-     <None Include="Assets\Plugins\UniTask\Runtime\UnityAsyncExtensions.tt" />
-     <Folder Include="Assets\Plugins\UniTask\Runtime\Internal" />
-     <Folder Include="Assets\Plugins\UniTask\Runtime\External" />
-     <Folder Include="Assets\Plugins\UniTask\Runtime\CompilerServices" />
      <Folder Include="Assets\Plugins\UniTask\Runtime\Triggers" />
      <None Include="Assets\Plugins\UniTask\Runtime\UniTask.asmdef" />
-     <Folder Include="Assets\Plugins\UniTask\Runtime\External\YooAsset" />
-     <None Include="Assets\Plugins\UniTask\Runtime\UniTaskExtensions.Shorthand.tt" />
+     <Folder Include="Assets\Plugins\UniTask\Runtime\Internal" />
+     <Folder Include="Assets\Plugins\UniTask\Runtime\CompilerServices" />
      <Folder Include="Assets\Plugins\UniTask\Runtime" />
-     <None Include="Assets\Plugins\UniTask\Runtime\UniTask.WhenAll.Generated.tt" />
-     <None Include="Assets\Plugins\UniTask\Runtime\Triggers\MonoBehaviourMessagesTriggers.tt" />
+     <Folder Include="Assets\Plugins\UniTask\Runtime\External" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -432,6 +424,9 @@
      </Reference>
      <Reference Include="dnlib">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\dnlib.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>D:\study\HotFixFrame\Client\Assets\Plugins\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -828,10 +823,6 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="YooAsset.csproj">
-      <Project>{cfdb1a83-9f43-7d59-49e2-6d192ea8a9dc}</Project>
-      <Name>YooAsset</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

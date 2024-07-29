@@ -51,6 +51,8 @@
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\PackageComparator\PackageComparatorWindow.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\CustomPackRule.cs" />
      <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Editor\Encryption.cs" />
+     <Compile Include="Assets\Editor\BuildHelper.cs" />
+     <Compile Include="Assets\Editor\SceneHelper.cs" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\PackageComparator" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Editor" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor" />
@@ -370,6 +372,9 @@
      </Reference>
      <Reference Include="dnlib">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\dnlib.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>D:\study\HotFixFrame\Client\Assets\Plugins\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -911,18 +916,6 @@
       <Project>{8441f412-22a4-275f-22e6-507969043f15}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="UniFramework.Event.csproj">
-      <Project>{a880cea0-c091-021c-17e5-72862b422f2f}</Project>
-      <Name>UniFramework.Event</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniFramework.Machine.csproj">
-      <Project>{10673f21-7ad3-1e2f-c73f-bb9413dc72d2}</Project>
-      <Name>UniFramework.Machine</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniFramework.Utility.csproj">
-      <Project>{a83c9481-d5c6-3068-db4f-3836ebf8175f}</Project>
-      <Name>UniFramework.Utility</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.ScriptableBuildPipeline.Editor.csproj">
       <Project>{2ec57df1-b9d7-6a73-9fb0-464ab69ced37}</Project>
       <Name>Unity.ScriptableBuildPipeline.Editor</Name>
@@ -939,25 +932,49 @@
       <Project>{08454660-2aee-81bd-3a4a-ec280ef6ed74}</Project>
       <Name>Unity.ScriptableBuildPipeline</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.Addressables.csproj">
-      <Project>{edf9bd84-a96c-3edf-a9da-3d0eac9bb002}</Project>
-      <Name>UniTask.Addressables</Name>
+    <ProjectReference Include="UniFramework.Event.csproj">
+      <Project>{a880cea0-c091-021c-17e5-72862b422f2f}</Project>
+      <Name>UniFramework.Event</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.csproj">
-      <Project>{122a9434-3d85-f474-b766-201e3676b0c8}</Project>
-      <Name>UniTask</Name>
+    <ProjectReference Include="UniFramework.Utility.csproj">
+      <Project>{a83c9481-d5c6-3068-db4f-3836ebf8175f}</Project>
+      <Name>UniFramework.Utility</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.DOTween.csproj">
-      <Project>{814740d6-86fa-cd99-5b8c-dfa02f017587}</Project>
-      <Name>UniTask.DOTween</Name>
+    <ProjectReference Include="UniFramework.Machine.csproj">
+      <Project>{10673f21-7ad3-1e2f-c73f-bb9413dc72d2}</Project>
+      <Name>UniFramework.Machine</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniWindow.csproj">
+      <Project>{fdfb751c-28d6-ec72-2fe4-dd81bd8bb41a}</Project>
+      <Name>UniWindow</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniSingleton.csproj">
+      <Project>{dc021cd2-7c96-2fb5-e6ff-95ffa419fef9}</Project>
+      <Name>UniSingleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniPooling.csproj">
+      <Project>{d77c3390-9cd4-b978-764e-4c4c6ade34de}</Project>
+      <Name>UniPooling</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.TextMeshPro.csproj">
       <Project>{0994afac-7be2-100c-7f26-fa89637f615f}</Project>
       <Name>UniTask.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{edf9bd84-a96c-3edf-a9da-3d0eac9bb002}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{814740d6-86fa-cd99-5b8c-dfa02f017587}</Project>
+      <Name>UniTask.DOTween</Name>
+    </ProjectReference>
     <ProjectReference Include="UniTask.Linq.csproj">
       <Project>{1bae22e7-00bf-7319-5bbe-188e81641616}</Project>
       <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{122a9434-3d85-f474-b766-201e3676b0c8}</Project>
+      <Name>UniTask</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

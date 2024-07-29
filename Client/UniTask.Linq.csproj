@@ -113,13 +113,9 @@
      <Compile Include="Assets\Plugins\UniTask\Runtime\Linq\AppendPrepend.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\Linq\UnityExtensions\Timer.cs" />
      <Compile Include="Assets\Plugins\UniTask\Runtime\Linq\SkipWhile.cs" />
-     <None Include="Assets\Plugins\UniTask\Runtime\Linq\CombineLatest.tt" />
-     <None Include="Assets\Plugins\UniTask\Runtime\Linq\Average.tt" />
-     <Folder Include="Assets\Plugins\UniTask\Runtime\Linq\UnityExtensions" />
-     <None Include="Assets\Plugins\UniTask\Runtime\Linq\Sum.tt" />
-     <None Include="Assets\Plugins\UniTask\Runtime\Linq\MinMax.tt" />
      <Folder Include="Assets\Plugins\UniTask\Runtime\Linq" />
      <None Include="Assets\Plugins\UniTask\Runtime\Linq\UniTask.Linq.asmdef" />
+     <Folder Include="Assets\Plugins\UniTask\Runtime\Linq\UnityExtensions" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -425,6 +421,9 @@
      </Reference>
      <Reference Include="dnlib">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\dnlib.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>D:\study\HotFixFrame\Client\Assets\Plugins\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

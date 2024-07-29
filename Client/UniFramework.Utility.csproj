@@ -348,6 +348,12 @@
      <Reference Include="ReportGeneratorMerged">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
+     <Reference Include="LZ4">
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\LZ4.dll</HintPath>
+     </Reference>
+     <Reference Include="dnlib">
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\dnlib.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
      </Reference>

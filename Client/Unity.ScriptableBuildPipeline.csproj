@@ -41,11 +41,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugin\com.unity.scriptablebuildpipeline@2.1.3\Runtime\Shared\BundleDetails.cs" />
-     <Compile Include="Assets\Plugin\com.unity.scriptablebuildpipeline@2.1.3\Runtime\CompatibilityAssetBundleManifest.cs" />
-     <Folder Include="Assets\Plugin\com.unity.scriptablebuildpipeline@2.1.3\Runtime\Shared" />
-     <None Include="Assets\Plugin\com.unity.scriptablebuildpipeline@2.1.3\Runtime\Unity.ScriptableBuildPipeline.asmdef" />
-     <Folder Include="Assets\Plugin\com.unity.scriptablebuildpipeline@2.1.3\Runtime" />
+     <Compile Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Runtime\Shared\BundleDetails.cs" />
+     <Compile Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Runtime\CompatibilityAssetBundleManifest.cs" />
+     <Folder Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Runtime\Shared" />
+     <None Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Runtime\Unity.ScriptableBuildPipeline.asmdef" />
+     <Folder Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Runtime" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -345,6 +345,12 @@
      </Reference>
      <Reference Include="ReportGeneratorMerged">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+     </Reference>
+     <Reference Include="LZ4">
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\LZ4.dll</HintPath>
+     </Reference>
+     <Reference Include="dnlib">
+     <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\dnlib.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

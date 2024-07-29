@@ -200,9 +200,9 @@
     ],
     "BundleList": [
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_effect_engines.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_effect_engines.bundle",
             "UnityCRC": 0,
-            "FileHash": "8a8e9cc4660eb483ca602233d3d28592",
+            "FileHash": "2bb6c4a363e38447ef90719dc2963f1d",
             "FileCRC": "00000000",
             "FileSize": 357081,
             "Encrypted": false,
@@ -210,9 +210,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_effect_explosions.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_effect_explosions.bundle",
             "UnityCRC": 0,
-            "FileHash": "92f9955f066f2cff8d6c140c605a6781",
+            "FileHash": "10e654934e4c61c880d9643d6c8f903f",
             "FileCRC": "00000000",
             "FileSize": 2041185,
             "Encrypted": false,
@@ -220,9 +220,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_entity.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_entity.bundle",
             "UnityCRC": 0,
-            "FileHash": "ec5f19e23e2df35a358a451c33f19926",
+            "FileHash": "8aef5c6b16011574eced5dc579bfc84c",
             "FileCRC": "00000000",
             "FileSize": 393695,
             "Encrypted": false,
@@ -230,9 +230,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_audio.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_audio.bundle",
             "UnityCRC": 0,
-            "FileHash": "6a6368b1ab12a1d35194ed000b254a2d",
+            "FileHash": "20c465f5fb36d500174e3a1ca0478320",
             "FileCRC": "00000000",
             "FileSize": 3103096,
             "Encrypted": false,
@@ -240,9 +240,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "unityshaders.bundle",
+            "BundleName": "defaultpackage_unityshaders.bundle",
             "UnityCRC": 0,
-            "FileHash": "6eda4881ee2596cf6a4ee4a21816faaa",
+            "FileHash": "af5ed969b276cb7676063792cb529545",
             "FileCRC": "00000000",
             "FileSize": 3217,
             "Encrypted": false,
@@ -250,9 +250,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_scene_scene_battle.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_scene_scene_battle.bundle",
             "UnityCRC": 0,
-            "FileHash": "76cac966ddd66351513231be404bf486",
+            "FileHash": "dc46d989b8165dee98f50997b4c0af90",
             "FileCRC": "00000000",
             "FileSize": 294706,
             "Encrypted": false,
@@ -260,9 +260,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_scene_scene_battlesettings.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_scene_scene_battlesettings.bundle",
             "UnityCRC": 0,
-            "FileHash": "3663b33a888837415b22f3dc36180dc3",
+            "FileHash": "44372ce861b20be72571e64be842c9dc",
             "FileCRC": "00000000",
             "FileSize": 1824,
             "Encrypted": false,
@@ -270,9 +270,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_scene_scene_home.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_scene_scene_home.bundle",
             "UnityCRC": 0,
-            "FileHash": "75c2125818fc59ba06bb5aec0ee50744",
+            "FileHash": "f62a558f36b179f7fdaeb62ce00b4509",
             "FileCRC": "00000000",
             "FileSize": 20306,
             "Encrypted": false,
@@ -280,9 +280,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_scene_scene_homesettings.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_scene_scene_homesettings.bundle",
             "UnityCRC": 0,
-            "FileHash": "35a2676dbf609a27947f21dc92746948",
+            "FileHash": "f4c2b99e60abed63abc183c9e999f150",
             "FileCRC": "00000000",
             "FileSize": 1821,
             "Encrypted": false,
@@ -290,9 +290,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_uiimage.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_uiimage.bundle",
             "UnityCRC": 0,
-            "FileHash": "dac4d3de676546e492a1dfd5e1b3c968",
+            "FileHash": "22817651175a31d85778e77f41914f2c",
             "FileCRC": "00000000",
             "FileSize": 145499,
             "Encrypted": false,
@@ -300,9 +300,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_uipanel_uibattle.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_uipanel_uibattle.bundle",
             "UnityCRC": 0,
-            "FileHash": "6535f668ca536886859ad1895d93d581",
+            "FileHash": "b8994dfcd2061ba1114a06cd5b96ab20",
             "FileCRC": "00000000",
             "FileSize": 34914,
             "Encrypted": false,
@@ -310,9 +310,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_uipanel_uihome.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_uipanel_uihome.bundle",
             "UnityCRC": 0,
-            "FileHash": "b0c9c730cc8139cd4df4f37f1238e53f",
+            "FileHash": "de2bf08998429cba38d68580907df280",
             "FileCRC": "00000000",
             "FileSize": 27012,
             "Encrypted": false,
@@ -320,9 +320,9 @@
             "DependIDs": []
         },
         {
-            "BundleName": "assets_samples_yooasset_2_1_2_space_shooter_gameres_uipanel_uiloading.bundle",
+            "BundleName": "defaultpackage_assets_samples_yooasset_2_1_2_space_shooter_gameres_uipanel_uiloading.bundle",
             "UnityCRC": 0,
-            "FileHash": "80aabd958e40866e35f24cc485d8da81",
+            "FileHash": "fcf5cbdf162ed74c1a94cbcea481279f",
             "FileCRC": "00000000",
             "FileSize": 7322,
             "Encrypted": false,

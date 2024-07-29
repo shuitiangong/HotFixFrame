@@ -41,10 +41,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Tests\Catalog.cs" />
      <Compile Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Tests\ContentLoadTests.cs" />
-     <Compile Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Tests\ContentLoadFixture.cs" />
      <Compile Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Tests\ContentLoadScenesTest.cs" />
+     <Compile Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Tests\Catalog.cs" />
+     <Compile Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Tests\ContentLoadFixture.cs" />
      <Folder Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Tests" />
      <None Include="Assets\Plugins\com.unity.scriptablebuildpipeline@2.1.3\Tests\Unity.ScriptableBuildPipeline.Tests.asmdef" />
      <Reference Include="UnityEngine">

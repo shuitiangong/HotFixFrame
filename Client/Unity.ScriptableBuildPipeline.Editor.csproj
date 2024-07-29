@@ -464,6 +464,9 @@
      <Reference Include="dnlib">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\dnlib.dll</HintPath>
      </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>D:\study\HotFixFrame\Client\Assets\Plugins\Newtonsoft.Json.dll</HintPath>
+     </Reference>
      <Reference Include="nunit.framework">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
      </Reference>

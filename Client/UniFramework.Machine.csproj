@@ -41,11 +41,11 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\UniFramework\UniMachine\Runtime\IStateNode.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\UniFramework\UniMachine\Runtime\UniLogger.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\UniFramework\UniMachine\Runtime\StateMachine.cs" />
-     <None Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\UniFramework\UniMachine\Runtime\UniFramework.Machine.asmdef" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\ThirdParty\UniFramework\UniMachine\Runtime" />
+     <Compile Include="Assets\Plugins\UniFramework\UniMachine\Runtime\IStateNode.cs" />
+     <Compile Include="Assets\Plugins\UniFramework\UniMachine\Runtime\UniLogger.cs" />
+     <Compile Include="Assets\Plugins\UniFramework\UniMachine\Runtime\StateMachine.cs" />
+     <None Include="Assets\Plugins\UniFramework\UniMachine\Runtime\UniFramework.Machine.asmdef" />
+     <Folder Include="Assets\Plugins\UniFramework\UniMachine\Runtime" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -351,6 +351,9 @@
      </Reference>
      <Reference Include="dnlib">
      <HintPath>D:\study\HotFixFrame\Client\Library\PackageCache\com.code-philosophy.hybridclr@53f4f33bf0\Plugins\dnlib.dll</HintPath>
+     </Reference>
+     <Reference Include="Newtonsoft.Json">
+     <HintPath>D:\study\HotFixFrame\Client\Assets\Plugins\Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -750,6 +753,10 @@
     <ProjectReference Include="YooAsset.csproj">
       <Project>{cfdb1a83-9f43-7d59-49e2-6d192ea8a9dc}</Project>
       <Name>YooAsset</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{122a9434-3d85-f474-b766-201e3676b0c8}</Project>
+      <Name>UniTask</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

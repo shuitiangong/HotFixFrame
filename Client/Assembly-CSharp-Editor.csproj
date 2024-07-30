@@ -41,26 +41,30 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\UrpDemo\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectorSetting.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollector.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectionHelper.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\CustomPackRule.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Editor\Encryption.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\PackageImporter\PackageImporterWindow.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Runtime\GameObjectAssetReference.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectorSetting.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollector.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Runtime\AssetOperationHandleExtension.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectionHelper.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Editor\CustomPackRule.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Runtime\LoadAssetsByTagOperation.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Editor\PackageImporter\PackageImporterWindow.cs" />
      <Compile Include="Assets\Editor\SceneHelper.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectorWindow.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectionManifest.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\PackageComparator\PackageComparatorWindow.cs" />
+     <Compile Include="Assets\Editor\PackageCheckWindow.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectorWindow.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectionManifest.cs" />
+     <Compile Include="Assets\Editor\YooassetExt\Scripts\Editor\PackageComparator\PackageComparatorWindow.cs" />
      <Compile Include="Assets\Editor\BuildHelper.cs" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\PackageComparator" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Editor" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor" />
+     <Compile Include="Assets\Editor\ReleaseTools.cs" />
+     <Folder Include="Assets\Editor\YooassetExt\Scripts" />
+     <Folder Include="Assets\Editor\YooassetExt\Scripts\Editor\PackageComparator" />
+     <Folder Include="Assets\Editor\YooassetExt\Scripts\Editor" />
      <Folder Include="Assets\Editor" />
-     <Folder Include="Assets\UrpDemo\TutorialInfo\Scripts\Editor" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\PackageImporter" />
-     <None Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectorWindow.uxml" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Editor\ShaderVariantCollector" />
+     <Folder Include="Assets\Editor\YooassetExt\Scripts\Runtime" />
+     <Folder Include="Assets\Editor\YooassetExt" />
+     <Folder Include="Assets\Editor\YooassetExt\Scripts\Editor\PackageImporter" />
+     <None Include="Assets\Editor\YooassetExt\Scripts\Editor\ShaderVariantCollector\ShaderVariantCollectorWindow.uxml" />
+     <Folder Include="Assets\Editor\YooassetExt\Scripts\Editor\ShaderVariantCollector" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -912,6 +916,10 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{8e399d07-fc4a-7ecd-7881-f923d075ebd1}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{8441f412-22a4-275f-22e6-507969043f15}</Project>
       <Name>Assembly-CSharp</Name>
@@ -920,6 +928,10 @@
       <Project>{8b0eb05a-e832-3f7b-463f-6bed0d05859a}</Project>
       <Name>YooAsset.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRF.Editor.csproj">
+      <Project>{e51e2259-817a-a9df-f478-b84e8f19bafd}</Project>
+      <Name>StompyRobot.SRF.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="UniSingleton.csproj">
       <Project>{dc021cd2-7c96-2fb5-e6ff-95ffa419fef9}</Project>
       <Name>UniSingleton</Name>
@@ -927,6 +939,10 @@
     <ProjectReference Include="UniFramework.Event.csproj">
       <Project>{a880cea0-c091-021c-17e5-72862b422f2f}</Project>
       <Name>UniFramework.Event</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRDebugger.Editor.csproj">
+      <Project>{979c0f51-f258-2364-de8c-5d0e12a1900f}</Project>
+      <Name>StompyRobot.SRDebugger.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.TextMeshPro.csproj">
       <Project>{0994afac-7be2-100c-7f26-fa89637f615f}</Project>
@@ -947,6 +963,14 @@
     <ProjectReference Include="UniFramework.Machine.csproj">
       <Project>{10673f21-7ad3-1e2f-c73f-bb9413dc72d2}</Project>
       <Name>UniFramework.Machine</Name>
+    </ProjectReference>
+    <ProjectReference Include="AOT.csproj">
+      <Project>{66b062c5-50d4-b5c8-7d40-103a152e0b5e}</Project>
+      <Name>AOT</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRDebugger.csproj">
+      <Project>{fbf98fed-bc4f-721b-eb29-3a3e15acdd8e}</Project>
+      <Name>StompyRobot.SRDebugger</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.DOTween.csproj">
       <Project>{814740d6-86fa-cd99-5b8c-dfa02f017587}</Project>
@@ -975,6 +999,10 @@
     <ProjectReference Include="UniTask.csproj">
       <Project>{122a9434-3d85-f474-b766-201e3676b0c8}</Project>
       <Name>UniTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRF.csproj">
+      <Project>{dbc59b87-3b94-d785-128c-d2a350190458}</Project>
+      <Name>StompyRobot.SRF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

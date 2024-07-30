@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b02dfa7aa9d4545b3417a18477fbee, type: 3}
+  m_Name: BuildinFileManifest
+  m_EditorClassIdentifier: 
+  BuildinFiles:
+  - PackageName: DefaultPackage
+    FileName: 8f2b450a4fbe3500d44c0d9ff07e096a.bundle
+    FileCRC32: ee178215
+  - PackageName: DefaultPackage
+    FileName: c45f750c6ad806145299d24e7e98c288.bundle
+    FileCRC32: 5e3b6820
+  - PackageName: RawFilePackage
+    FileName: rawfilepackage_assets_hotupdateassets_aotdll_aotdlllist_txt.rawfile
+    FileCRC32: 983f8506
+  - PackageName: RawFilePackage
+    FileName: rawfilepackage_assets_hotupdateassets_aotdll_mscorlib_dll_bytes.rawfile
+    FileCRC32: 68174296
+  - PackageName: RawFilePackage
+    FileName: rawfilepackage_assets_hotupdateassets_aotdll_system_core_dll_bytes.rawfile
+    FileCRC32: ae9b57b0
+  - PackageName: RawFilePackage
+    FileName: rawfilepackage_assets_hotupdateassets_aotdll_system_dll_bytes.rawfile
+    FileCRC32: f96bd267
+  - PackageName: RawFilePackage
+    FileName: rawfilepackage_assets_hotupdateassets_aotdll_unitask_dll_bytes.rawfile
+    FileCRC32: 5801b50e
+  - PackageName: RawFilePackage
+    FileName: rawfilepackage_assets_hotupdateassets_hotupdatedll_assembly-csharp_dll_bytes.rawfile
+    FileCRC32: 0429fc9d
+  - PackageName: RawFilePackage
+    FileName: rawfilepackage_assets_hotupdateassets_hotupdatedll_hotupdatedlllist_txt.rawfile
+    FileCRC32: 79f6bde3

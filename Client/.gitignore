@@ -1,0 +1,60 @@
+﻿/.svn/
+/.vs/
+/.idea/
+
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Ll]ogs/
+/[Bb]uild/
+/[Dd]ump/
+/UserSettings/
+/DynamicCode/Codes/
+/[Dd]ebugLogs/
+/Assets/Plugins/FMOD/Cache
+/Packages/packages-lock.json
+/Assets/StreamingAssets/
+/Assets/StreamingAssets.meta
+/Assets/UXTools/
+/Assets/UXTools.meta
+/HybridCLRData
+
+/yoo/
+
+/Bundles/
+
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.mdb
+*.mdb.meta
+*.pdb
+*.pdb.meta
+
+# Vistual Studio
+.vsconfig
+
+# Unity3D version
+/ProjectSettings/ProjectVersion.txt
+
+# Unity3D generated meta files
+*.pidb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# Builds
+*.apk
+*.unitypackage
+
+# luban
+.cache.meta
+
+# test
+/Assets/Test

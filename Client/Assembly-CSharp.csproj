@@ -41,146 +41,32 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\Behaviour\ApplicationQuit.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\UserEventDefine.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\BattleRoom.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Runtime\GameObjectAssetReference.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FileStream.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmUpdateVersion.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityBullet.cs" />
-     <Compile Include="Assets\AOTScripts\HttpHelper.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UIBattleWindow.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic\SceneBattle.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmUpdateManifest.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmDownloadFiles.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Runtime\AssetOperationHandleExtension.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmPatchDone.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UIHomeWindow.cs" />
-     <Compile Include="Assets\AOTScripts\HotUpdateManager.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\SceneEventDefine.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\PatchWindow.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmCheckVersion.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\PatchManager.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Runtime\LoadAssetsByTagOperation.cs" />
-     <Compile Include="Assets\AOTScripts\StreamingAssetsHelper\StreamingAssetsHelper.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityEnemy.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityEffect.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\BattleEventDefine.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmInitialize.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic\GameManager.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmPatchPrepare.cs" />
-     <Compile Include="Assets\UrpDemo\Scripts\SimpleCameraController.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmCheckNetwork.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UILoadingWindow.cs" />
-     <Compile Include="Assets\HotUpdateScripts\FsmInitGame.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine\PatchEventDefine.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityAsteroid.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmCreateDownloader.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic\EntityPlayer.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmDownloadOver.cs" />
-     <Compile Include="Assets\HotUpdateScripts\FsmLunchHotUpdate.cs" />
-     <Compile Include="Assets\AOTScripts\PublicData.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmLoadHotUpdateDll.cs" />
-     <Compile Include="Assets\UrpDemo\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\Behaviour\BackgroundScroller.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic\SceneHome.cs" />
-     <Compile Include="Assets\AOTScripts\Boot.cs" />
-     <Compile Include="Assets\AOTScripts\StreamingAssetsHelper\BuildinFileManifest.cs" />
-     <Compile Include="Assets\AOTScripts\PatchLogic\FsmNode\FsmClearCache.cs" />
-     <Compile Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic\UIAboutWindow.cs" />
-     <Compile Include="Assets\AOTScripts\StreamingAssetsHelper\StreamingAssetsDefine.cs" />
+     <Compile Include="Assets\HybridCLRGenerate\AOTGenericReferences.cs" />
+     <Compile Include="Assets\HotUpdateScripts\test.cs" />
      <Folder Include="Assets" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\ShaderVariants" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\Audio" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Asteroid\prop_asteroid_02" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\UIImage" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\Scene" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\Effect" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\UIAtlas" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts" />
-     <Folder Include="Assets\UrpDemo\Materials" />
-     <None Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameSetting\AssetBundleCollectorConfig.xml" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Scene" />
-     <Folder Include="Assets\UrpDemo\Presets\Defaults" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic" />
-     <None Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Shader\MyUnlitShader.shader" />
-     <Folder Include="Assets\UrpDemo\Scripts" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\UIPanel" />
-     <Folder Include="Assets\AOTScripts\PatchLogic\FsmNode" />
-     <Folder Include="Assets\UrpDemo" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Vehicle\vehicle_enemyShip\Materials" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Vehicle\vehicle_enemyShip" />
+     <None Include="Assets\HotUpdateAssets\AOTDll\AOTDLLList.txt" />
      <Folder Include="Assets\StreamingAssets" />
-     <Folder Include="Assets\Scenes" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\Behaviour" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Props\Jigsaw" />
-     <Folder Include="Assets\UrpDemo\Scenes" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Drywall" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Plastic" />
+     <Folder Include="Assets\HotUpdateAssets\Prefabs" />
+     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter" />
      <Folder Include="Assets\HotUpdateScripts" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\EventDefine" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\BattleLogic" />
-     <Folder Include="Assets\UrpDemo\Presets" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Props\Hammer" />
-     <None Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\ShaderVariants\MyShaderVariants.json" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\UIFont" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Vehicle\vehicle_playerShip\Materials" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Props\Paint" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\PatchLogic\FsmNode" />
-     <Folder Include="Assets\UrpDemo\Settings" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\Effect\Engines" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Concrete" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Shader" />
-     <Folder Include="Assets\AOTScripts\PatchLogic" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample\Scripts\Runtime" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Extension Sample" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\Effect\Explosions" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Metal" />
-     <Folder Include="Assets\UrpDemo\TutorialInfo" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets" />
-     <Folder Include="Assets\UrpDemo\TutorialInfo\Scripts" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes" />
-     <Folder Include="Assets\UrpDemo\TutorialInfo\Icons" />
+     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameSetting" />
+     <Folder Include="Assets\HybridCLRGenerate" />
+     <None Include="Assets\HotUpdateAssets\HotUpdateDll\HotUpdateDLLList.txt" />
+     <Folder Include="Assets\HotUpdateAssets\HotUpdateDll" />
+     <Folder Include="Assets\StreamingAssets\yoo\DefaultPackage" />
+     <None Include="Assets\HybridCLRGenerate\link.xml" />
+     <Folder Include="Assets\StreamingAssets\yoo\RawFilePackage" />
+     <Folder Include="Assets\HotUpdateAssets\AOTDll" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\Resources" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Models" />
-     <None Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Shader\StandardMobile.shader" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\GameLogic" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\UIAtlas\common" />
-     <Folder Include="Assets\AOTScripts" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameScript\Runtime\WindowLogic" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Props\Construction_Light" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Asteroid\prop_asteroid_03" />
+     <Folder Include="Assets\StreamingAssets\yoo" />
      <Folder Include="Assets\Samples\YooAsset" />
      <Folder Include="Assets\HotUpdateAssets" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Props" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Asteroid\prop_asteroid_02\Materials" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Shaders" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures" />
      <Folder Include="Assets\HybridCLRData" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Vehicle" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity" />
-     <Folder Include="Assets\AOTScripts\StreamingAssetsHelper" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Props\HardHat" />
-     <None Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Shader\StandardMobile.cginc" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameRes\Entity" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Vehicle\vehicle_playerShip" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\UIAnim" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Asteroid\prop_asteroid_03\Materials" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Prefabs" />
      <Folder Include="Assets\Samples" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Textures\Wood" />
      <None Include="Assets\MyShaderVariants.json" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Asteroid\prop_asteroid_01" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Asteroid" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Effect" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameSetting" />
+     <Folder Include="Assets\Resources" />
      <Folder Include="Assets\Samples\YooAsset\2.1.2" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter\GameArt\Entity\Asteroid\prop_asteroid_01\Materials" />
-     <Folder Include="Assets\Samples\YooAsset\2.1.2\Space Shooter" />
-     <Folder Include="Assets\UrpDemo\ExampleAssets\Materials" />
+     <Folder Include="Assets\HotUpdateAssets\Scenes" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.21f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -984,9 +870,17 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{8e399d07-fc4a-7ecd-7881-f923d075ebd1}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="YooAsset.Editor.csproj">
       <Project>{8b0eb05a-e832-3f7b-463f-6bed0d05859a}</Project>
       <Name>YooAsset.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRF.Editor.csproj">
+      <Project>{e51e2259-817a-a9df-f478-b84e8f19bafd}</Project>
+      <Name>StompyRobot.SRF.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UniSingleton.csproj">
       <Project>{dc021cd2-7c96-2fb5-e6ff-95ffa419fef9}</Project>
@@ -995,6 +889,10 @@
     <ProjectReference Include="UniFramework.Event.csproj">
       <Project>{a880cea0-c091-021c-17e5-72862b422f2f}</Project>
       <Name>UniFramework.Event</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRDebugger.Editor.csproj">
+      <Project>{979c0f51-f258-2364-de8c-5d0e12a1900f}</Project>
+      <Name>StompyRobot.SRDebugger.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.TextMeshPro.csproj">
       <Project>{0994afac-7be2-100c-7f26-fa89637f615f}</Project>
@@ -1015,6 +913,14 @@
     <ProjectReference Include="UniFramework.Machine.csproj">
       <Project>{10673f21-7ad3-1e2f-c73f-bb9413dc72d2}</Project>
       <Name>UniFramework.Machine</Name>
+    </ProjectReference>
+    <ProjectReference Include="AOT.csproj">
+      <Project>{66b062c5-50d4-b5c8-7d40-103a152e0b5e}</Project>
+      <Name>AOT</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRDebugger.csproj">
+      <Project>{fbf98fed-bc4f-721b-eb29-3a3e15acdd8e}</Project>
+      <Name>StompyRobot.SRDebugger</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.DOTween.csproj">
       <Project>{814740d6-86fa-cd99-5b8c-dfa02f017587}</Project>
@@ -1043,6 +949,10 @@
     <ProjectReference Include="UniTask.csproj">
       <Project>{122a9434-3d85-f474-b766-201e3676b0c8}</Project>
       <Name>UniTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="StompyRobot.SRF.csproj">
+      <Project>{dbc59b87-3b94-d785-128c-d2a350190458}</Project>
+      <Name>StompyRobot.SRF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

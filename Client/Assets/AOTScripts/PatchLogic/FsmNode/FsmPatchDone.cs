@@ -18,11 +18,12 @@ internal class FsmPatchDone : IStateNode
 	async UniTask IStateNode.OnEnter()
 	{
 		PatchEventDefine.PatchStatesChange.SendEventMessage("开始游戏！");
-
+		
+		//TODO: 加载启动场景
 		// 创建游戏管理器
 		UniSingleton.CreateSingleton<GameManager>();
-
-		// 开启游戏流程
+		//
+		// // 开启游戏流程
 		GameManager.Instance.Run();
 	}
 	async UniTask IStateNode.OnUpdate()

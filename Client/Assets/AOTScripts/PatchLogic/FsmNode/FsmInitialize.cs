@@ -46,13 +46,22 @@ internal class FsmInitialize : IStateNode
 			YooAssets.SetDefaultPackage(package);
 		}
 
-		// 编辑器下的模拟模式
+		var rawPackage = YooAssets.TryGetPackage(PublicData.RawFilePackage);
+		if (rawPackage == null) {
+			rawPackage = YooAssets.CreatePackage(PublicData.RawFilePackage);
+		}
 		InitializationOperation initializationOperation = null;
+		InitializationOperation initializationOperation2 = null;
+		
+		// 编辑器下的模拟模式
 		if (playMode == EPlayMode.EditorSimulateMode)
 		{
 			var createParameters = new EditorSimulateModeParameters();
 			createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(buildPipeline, packageName);
 			initializationOperation = package.InitializeAsync(createParameters);
+			var createParameters2 = new EditorSimulateModeParameters();
+			createParameters2.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.RawFileBuildPipeline, PublicData.RawFilePackage);
+			initializationOperation2 = rawPackage.InitializeAsync(createParameters2);
 		}
 
 		// 单机运行模式
@@ -61,6 +70,7 @@ internal class FsmInitialize : IStateNode
 			var createParameters = new OfflinePlayModeParameters();
 			createParameters.DecryptionServices = new FileStreamDecryption();
 			initializationOperation = package.InitializeAsync(createParameters);
+			initializationOperation2 = rawPackage.InitializeAsync(createParameters);
 		}
 
 		// 联机运行模式
@@ -73,9 +83,11 @@ internal class FsmInitialize : IStateNode
 			createParameters.BuildinQueryServices = new GameQueryServices();
 			createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
 			initializationOperation = package.InitializeAsync(createParameters);
+			initializationOperation2 = rawPackage.InitializeAsync(createParameters);
 		}
 
 		await initializationOperation.ToUniTask();
+		await initializationOperation2.ToUniTask();
 		if (package.InitializeStatus == EOperationStatus.Succeed)
 		{
 

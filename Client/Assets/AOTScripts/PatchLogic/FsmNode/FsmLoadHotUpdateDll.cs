@@ -39,7 +39,7 @@ public class FsmLoadHotUpdateDll : IStateNode
 
     async UniTask LoadHotUpdateAssemblies()
     {
-        var package = YooAssets.TryGetPackage(PublicData.PackageName);
+        var package = YooAssets.TryGetPackage(PublicData.RawFilePackage);
         if (package == null)
         {
             Debug.Log("包获取失败");
@@ -72,7 +72,7 @@ public class FsmLoadHotUpdateDll : IStateNode
     public async UniTask LoadMetadataForAOTAssemblies()
     {
         HomologousImageMode mode = HomologousImageMode.SuperSet;
-        var package = YooAssets.TryGetPackage(PublicData.PackageName);
+        var package = YooAssets.TryGetPackage(PublicData.RawFilePackage);
         if (package == null)
         {
             Debug.Log("包获取失败");

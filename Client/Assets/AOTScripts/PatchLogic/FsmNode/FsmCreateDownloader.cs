@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UniFramework.Machine;
-using UniFramework.Singleton;
 using YooAsset;
 using Cysharp.Threading.Tasks;
 
@@ -29,30 +26,32 @@ public class FsmCreateDownloader : IStateNode
 	{
 	}
 
-	async UniTask CreateDownloader()
-	{
-		//TODO:搬到appsetting
-		int downloadingMaxNum = 10;
-		int failedTryAgain = 3;
-		//创建多个下载器
-		var downloader = YooAssets.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
-		PatchManager.Instance.Downloader = downloader;
+	async UniTask CreateDownloader() {
+		PatchManager.Instance.Downloaders.Clear();
 
-		if (downloader.TotalDownloadCount == 0)
-		{
+		var downloaders = PatchManager.Instance.Downloaders;
+		//创建多个下载器
+		int downLoadCount = 0;
+		long totalDownLoadBytes = 0;
+		for (int i = 0; i < PublicData.Packages.Count; ++i) {
+			var pkg = YooAssets.GetPackage(PublicData.Packages[i]);
+			var downloader = pkg.CreateResourceDownloader(PublicData.downloadingMaxNum, PublicData.failedTryAgain);
+			downLoadCount += downloader.TotalDownloadCount;
+			totalDownLoadBytes += downloader.TotalDownloadBytes;
+			downloaders.Add(downloader);
+		}
+		
+		if (downLoadCount == 0) {
 			Debug.Log("Not found any download files !");
 			_machine.ChangeState<FsmDownloadOver>();
 		}
-		else
-		{
+		else {
 			//A total of 10 files were found that need to be downloaded
-			Debug.Log($"Found total {downloader.TotalDownloadCount} files that need download ！");
+			Debug.Log($"Found total {downLoadCount} files that need download ！");
 
 			// 发现新更新文件后，挂起流程系统
 			// TODO: 注意：开发者需要在下载前检测磁盘空间不足
-			int totalDownloadCount = downloader.TotalDownloadCount;
-			long totalDownloadBytes = downloader.TotalDownloadBytes;
-			PatchEventDefine.FoundUpdateFiles.SendEventMessage(totalDownloadCount, totalDownloadBytes);
+			PatchEventDefine.FoundUpdateFiles.SendEventMessage(downLoadCount, totalDownLoadBytes);
 		}
 	}
 }

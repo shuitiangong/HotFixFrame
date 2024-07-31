@@ -50,14 +50,6 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-  - PackageName: RawFilePackage
-    PackageDesc: 
-    EnableAddressable: 1
-    LocationToLower: 0
-    IncludeAssetGUID: 0
-    AutoCollectShaders: 1
-    IgnoreRuleName: NormalIgnoreRule
-    Groups:
     - GroupName: AOT
       GroupDesc: "AOT\u8865\u5145"
       AssetTags: 
@@ -67,7 +59,7 @@ MonoBehaviour:
         CollectorGUID: 889184bb1b2f06b4883510975df52058
         CollectorType: 0
         AddressRuleName: AddressByFileName
-        PackRuleName: PackRawFile
+        PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
@@ -80,7 +72,7 @@ MonoBehaviour:
         CollectorGUID: d67b42c8f5a173744a1432af730685de
         CollectorType: 0
         AddressRuleName: AddressByFileName
-        PackRuleName: PackRawFile
+        PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 

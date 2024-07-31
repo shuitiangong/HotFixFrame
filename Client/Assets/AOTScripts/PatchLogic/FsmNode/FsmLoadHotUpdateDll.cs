@@ -37,29 +37,26 @@ public class FsmLoadHotUpdateDll : IStateNode
 ;
     }
 
-    async UniTask LoadHotUpdateAssemblies()
-    {
-        var package = YooAssets.TryGetPackage(PublicData.RawFilePackage);
-        if (package == null)
-        {
+    async UniTask LoadHotUpdateAssemblies() {
+        var package = YooAssets.TryGetPackage(PublicData.DefaultPackageName);
+        if (package == null) {
             Debug.Log("包获取失败");
+            //TODO: 失败处理
+            return;
         }
-        var handle = package.LoadRawFileAsync("HotUpdateDLLList");
+        var handle = package.LoadAssetAsync<TextAsset>("HotUpdateDLLList");
         await handle.ToUniTask();
-        var data = handle.GetRawFileText();
+        var data = handle.GetAssetObject<TextAsset>().text;
         var dllNames = JsonConvert.DeserializeObject<List<string>>(data);
-        foreach (var DllName in dllNames)
-        {
-            var dataHandle = package.LoadRawFileAsync(DllName);
+        foreach (var DllName in dllNames) {
+            var dataHandle = package.LoadAssetAsync<TextAsset>(DllName);
             await dataHandle.ToUniTask();
-            if (dataHandle.Status != EOperationStatus.Succeed)
-            {
+            if (dataHandle.Status != EOperationStatus.Succeed) {
                 Debug.Log("资源加载失败" + DllName);
                 return;
             }
-            var dllData = dataHandle.GetRawFileData();
-            if (dllData == null)
-            {
+            var dllData = dataHandle.GetAssetObject<TextAsset>().bytes;
+            if (dllData == null) {
                 Debug.Log("获取Dll数据失败");
                 return;
             }
@@ -69,27 +66,28 @@ public class FsmLoadHotUpdateDll : IStateNode
             Debug.Log($"加载热更新Dll:{DllName}");
         }
     }
-    public async UniTask LoadMetadataForAOTAssemblies()
-    {
-        HomologousImageMode mode = HomologousImageMode.SuperSet;
-        var package = YooAssets.TryGetPackage(PublicData.RawFilePackage);
-        if (package == null)
-        {
-            Debug.Log("包获取失败");
+    
+    /// <summary>
+    /// 加载AOT补充dll
+    /// </summary>
+    public async UniTask LoadMetadataForAOTAssemblies() {
+        var package = YooAssets.TryGetPackage(PublicData.DefaultPackageName);
+        if (package == null) {
+            Debug.LogError("包获取失败");
+            //TODO: 失败处理
+            return;
         }
-        var handle = package.LoadRawFileAsync("AOTDLLList");
+        var handle = package.LoadAssetAsync<TextAsset>("AOTDLLList");
         await handle.ToUniTask();
-        var data = handle.GetRawFileText();
+        var data = handle.GetAssetObject<TextAsset>().text;
         var dllNames = JsonConvert.DeserializeObject<List<string>>(data);
-        foreach (var name in dllNames)
-        {
-            var dataHandle = package.LoadRawFileAsync(name);
+        
+        HomologousImageMode mode = HomologousImageMode.SuperSet;
+        foreach (var name in dllNames) {
+            var dataHandle = package.LoadAssetAsync<TextAsset>(name);
             await dataHandle.ToUniTask();
-            var dllData = dataHandle.GetRawFileData();
-            if (data == null)
-            {
-                continue;
-            }
+            var dllData = dataHandle.GetAssetObject<TextAsset>()?.bytes;
+            if (data == null) continue;
             // 加载assembly对应的dll，会自动为它hook。一旦aot泛型函数的native函数不存在，用解释器版本代码
             LoadImageErrorCode err = RuntimeApi.LoadMetadataForAOTAssembly(dllData, mode);
             Debug.Log($"LoadMetadataForAOTAssembly:{name}. mode:{mode} ret:{err}");

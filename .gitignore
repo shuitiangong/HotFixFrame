@@ -1,3 +1,6 @@
 
 Client/obj/Debug
 Client/obj/Debug
+Client/Assets/HotUpdateAssets/HotUpdateDll
+Client/Assets/HotUpdateAssets/HotUpdateDll
+*.csproj

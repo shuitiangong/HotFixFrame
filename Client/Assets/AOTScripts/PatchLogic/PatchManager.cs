@@ -18,12 +18,13 @@ public class PatchManager : SingletonInstance<PatchManager>, ISingleton
 	/// <summary>
 	/// 包裹的版本信息
 	/// </summary>
-	public string PackageVersion { set; get; }
+	public List<string> PackageVersions { set; get; } = new List<string>();
 	public string DllPackageVersion { set; get; }
+
 	/// <summary>
 	/// 下载器
 	/// </summary>
-	public ResourceDownloaderOperation Downloader { set; get; }
+	public List<ResourceDownloaderOperation> Downloaders { set; get; } = new List<ResourceDownloaderOperation>();
 
 
 	private bool _isRun = false;

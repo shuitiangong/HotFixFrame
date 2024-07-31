@@ -1,10 +1,6 @@
-﻿using System;
-using System.IO;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UniFramework.Machine;
-using UniFramework.Singleton;
 using YooAsset;
 using Cysharp.Threading.Tasks;
 
@@ -31,95 +27,87 @@ internal class FsmInitialize : IStateNode
 	{
 	}
 
-	private async UniTask InitPackage()
-	{
-		
+	private async UniTask InitPackage() {
 		var playMode = PatchManager.Instance.PlayMode;
 
-		// 创建默认的资源包
-		string packageName = PublicData.DefaultPackageName;
-		EDefaultBuildPipeline buildPipeline = PublicData.BuildPipeline;
-		var package = YooAssets.TryGetPackage(packageName);
-		if (package == null)
-		{
-			package = YooAssets.CreatePackage(packageName);
-			YooAssets.SetDefaultPackage(package);
-		}
+		//创建资源包
+		List<ResourcePackage> packages = new List<ResourcePackage>();
+		foreach (var name in PublicData.Packages) {
+			var pkg = YooAssets.TryGetPackage(name);
+			if (pkg == null) {
+				pkg = YooAssets.CreatePackage(name);
+			}
+			packages.Add(pkg);
 
-		var rawPackage = YooAssets.TryGetPackage(PublicData.RawFilePackage);
-		if (rawPackage == null) {
-			rawPackage = YooAssets.CreatePackage(PublicData.RawFilePackage);
+			if (name == PublicData.DefaultPackageName) {
+				YooAssets.SetDefaultPackage(pkg);
+			}
 		}
-		InitializationOperation initializationOperation = null;
-		InitializationOperation initializationOperation2 = null;
+		
+		//创建初始化流程
+		List<InitializationOperation> initOps = new List<InitializationOperation>();
 		
 		// 编辑器下的模拟模式
-		if (playMode == EPlayMode.EditorSimulateMode)
-		{
-			var createParameters = new EditorSimulateModeParameters();
-			createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(buildPipeline, packageName);
-			initializationOperation = package.InitializeAsync(createParameters);
-			var createParameters2 = new EditorSimulateModeParameters();
-			createParameters2.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(EDefaultBuildPipeline.RawFileBuildPipeline, PublicData.RawFilePackage);
-			initializationOperation2 = rawPackage.InitializeAsync(createParameters2);
+		if (playMode == EPlayMode.EditorSimulateMode) {
+			foreach (var pkg in packages) {
+				var createParameters = new EditorSimulateModeParameters();
+				createParameters.SimulateManifestFilePath = EditorSimulateModeHelper.SimulateBuild(PublicData.BuildPipeline, pkg.PackageName);
+				var initOp = pkg.InitializeAsync(createParameters);
+				initOps.Add(initOp);
+			}
 		}
 
 		// 单机运行模式
-		if (playMode == EPlayMode.OfflinePlayMode)
-		{
-			var createParameters = new OfflinePlayModeParameters();
-			createParameters.DecryptionServices = new FileStreamDecryption();
-			initializationOperation = package.InitializeAsync(createParameters);
-			initializationOperation2 = rawPackage.InitializeAsync(createParameters);
+		if (playMode == EPlayMode.OfflinePlayMode) {
+			foreach (var pkg in packages) {
+				var createParameters = new OfflinePlayModeParameters();
+				createParameters.DecryptionServices = new FileStreamDecryption();
+				var initOp = pkg.InitializeAsync(createParameters);
+				initOps.Add(initOp);
+			}
 		}
 
 		// 联机运行模式
-		if (playMode == EPlayMode.HostPlayMode)
-		{
-			string defaultHostServer = GetHostServerURL(PublicData.DefaultPackageName);
-			string fallbackHostServer = GetHostServerURL(PublicData.DefaultPackageName);
-			var createParameters = new HostPlayModeParameters();
-			createParameters.DecryptionServices = new FileStreamDecryption();
-			createParameters.BuildinQueryServices = new GameQueryServices();
-			createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
-			initializationOperation = package.InitializeAsync(createParameters);
-			var createParameters2 = new HostPlayModeParameters();
-			createParameters2.DecryptionServices = new FileStreamDecryption();
-			createParameters2.BuildinQueryServices = new GameQueryServices();
-			createParameters2.RemoteServices = new RemoteServices(GetHostServerURL(PublicData.RawFilePackage), GetHostServerURL(PublicData.RawFilePackage));
-			initializationOperation2 = rawPackage.InitializeAsync(createParameters2);
+		if (playMode == EPlayMode.HostPlayMode) {
+			foreach (var pkg in packages) {
+				string defaultHostServer = GetHostServerURL(pkg.PackageName);
+				string fallbackHostServer = GetHostServerURL(pkg.PackageName);
+				var createParameters = new HostPlayModeParameters();
+				createParameters.DecryptionServices = new FileStreamDecryption();
+				createParameters.BuildinQueryServices = new GameQueryServices();
+				createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+				var initOp = pkg.InitializeAsync(createParameters);
+				initOps.Add(initOp);
+			}
 		}
 
-		await initializationOperation.ToUniTask();
-		await initializationOperation2.ToUniTask();
-		if (package.InitializeStatus == EOperationStatus.Succeed)
-		{
-
-			_machine.ChangeState<FsmUpdateVersion>();
+		//初始化资源包
+		for (int i = 0; i<initOps.Count; ++i) {
+			await initOps[i].ToUniTask();
+			
+			if (packages[i].InitializeStatus != EOperationStatus.Succeed) {
+				Debug.LogWarning($"{initOps[i].Error}");
+				PatchEventDefine.InitializeFailed.SendEventMessage();
+				return;
+			}
 		}
-		else
-		{
-			Debug.LogWarning($"{initializationOperation.Error}");
-			PatchEventDefine.InitializeFailed.SendEventMessage();
-		}
+		_machine.ChangeState<FsmUpdateVersion>();
 	}
 
 	/// <summary>
 	/// 获取资源服务器地址
 	/// </summary>
-	private string GetHostServerURL(string packageName)
-	{
-		//string hostServerIP = "http://10.0.2.2"; //安卓模拟器地址
+	private string GetHostServerURL(string packageName) {
 		string hostServerIP = HttpHelper.HttpHost;
 		string gameVersion = PublicData.Version;
 
 		if (PublicData.platform == TargetPlatform.Android)
-			return $"{hostServerIP}/CDN/Android/{gameVersion}/{packageName}";
+			return $"{hostServerIP}/CDN/Android/{packageName}/{gameVersion}";
 		else if (PublicData.platform == TargetPlatform.IOS)
-			return $"{hostServerIP}/CDN/IPhone/{gameVersion}/{packageName}";
+			return $"{hostServerIP}/CDN/IPhone/{packageName}/{gameVersion}";
 		else if (PublicData.platform == TargetPlatform.WebGL)
-			return $"{hostServerIP}/CDN/WebGL/{gameVersion}/{packageName}";
+			return $"{hostServerIP}/CDN/WebGL/{packageName}/{gameVersion}";
 		else
-			return $"{hostServerIP}/CDN/PC/{gameVersion}/{packageName}";
+			return $"{hostServerIP}/CDN/StandaloneWindows64/{packageName}/{gameVersion}";
 	}
 }

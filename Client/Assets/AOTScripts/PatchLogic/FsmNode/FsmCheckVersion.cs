@@ -30,7 +30,7 @@ public class FsmCheckVersion : IStateNode
             Debug.Log("编辑器模拟运行，无需请求版本文件");
             return;
         }
-        UnityWebRequest request = new UnityWebRequest($"{HttpHelper.HttpHost}/CDN/{PublicData.platform.ToString()}/Version/VERSION.txt");
+        UnityWebRequest request = new UnityWebRequest($"{HttpHelper.HttpHost}/CDN/{PublicData.platform.ToString()+PublicData.VersionUrl}");
         DownloadHandlerBuffer dH = new DownloadHandlerBuffer();
         request.downloadHandler = dH;
         var cts = new CancellationTokenSource();

@@ -102,10 +102,7 @@ public class BuildHelper
     /// <param name="forceRebuild">是否强制构建</param>
     private static void BuildInternal(BuildTarget buildTarget, string packageVersion, bool forceRebuild, EBuildinFileCopyOption buildinFileCopyOption,string branch="") {
         Debug.Log($"开始构建 : {buildTarget}");
-
         
-        
-        Debug.Log("开始构建");
         //自定义构建管线
         //BuildParameters.SBPBuildParameters sbpBuildParameters = new BuildParameters.SBPBuildParameters();
         //sbpBuildParameters.WriteLinkXML = true);
@@ -113,7 +110,7 @@ public class BuildHelper
         //目前使用内建构建就能满足需求
         BuiltinBuildParameters buildParameters = new BuiltinBuildParameters();
         //buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()+ branch;
-        buildParameters.BuildOutputRoot = $"D:\\CDN\\PC\\{packageVersion}";
+        buildParameters.BuildOutputRoot = $"D:\\CDN";
         buildParameters.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
         buildParameters.BuildTarget = buildTarget;
         buildParameters.BuildPipeline = EBuildPipeline.BuiltinBuildPipeline.ToString();
@@ -136,17 +133,15 @@ public class BuildHelper
         // 执行构建
         BuiltinBuildPipeline pipeline = new BuiltinBuildPipeline();
         var buildResult = pipeline.Run(buildParameters,true);
-        if (buildResult.Success)
-        {
+        if (buildResult.Success) {
             Debug.Log($"资源AB构建成功 : {buildResult.OutputPackageDirectory}");
             defaultPackageParameters = buildParameters;
         }
-        else
-        {
+        else {
             throw new Exception($"资源AB构建失败 : {buildResult.ErrorInfo}");
         }
 
-        BuildConfig(buildTarget, packageVersion,branch,buildinFileCopyOption);
+        //BuildConfig(buildTarget, packageVersion,branch,buildinFileCopyOption);
     }
 
     /// <summary>
@@ -156,33 +151,33 @@ public class BuildHelper
     /// <param name="packageVersion"></param>
     private static void BuildConfig(BuildTarget buildTarget, string packageVersion,string branch,EBuildinFileCopyOption copyOption)
     {
-        RawFileBuildParameters buildParameters = new RawFileBuildParameters();
-        //buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()+branch;
-        buildParameters.BuildOutputRoot = $"D:\\CDN\\PC\\{packageVersion}";
-        buildParameters.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
-        buildParameters.BuildTarget = buildTarget;
-        buildParameters.BuildPipeline = EBuildPipeline.RawFileBuildPipeline.ToString();
-        buildParameters.BuildMode = EBuildMode.ForceRebuild;
-
-        buildParameters.PackageName = "RawFilePackage";
-        buildParameters.PackageVersion = packageVersion;
-        buildParameters.VerifyBuildingResult = true;
-        buildParameters.FileNameStyle = EFileNameStyle.HashName;
-        buildParameters.BuildinFileCopyOption = copyOption;
-        buildParameters.BuildinFileCopyParams = string.Empty;
-
-        // 执行构建
-        RawFileBuildPipeline pipeline = new RawFileBuildPipeline();
-        var buildResult = pipeline.Run(buildParameters, true);
-        if (buildResult.Success)
-        {
-            Debug.Log($"配置AB构建成功 : {buildResult.OutputPackageDirectory}");
-            configPackageParameters = buildParameters;
-        }
-        else
-        {
-            throw new Exception($"配置AB构建失败 : {buildResult.ErrorInfo}");
-        }
+        // RawFileBuildParameters buildParameters = new RawFileBuildParameters();
+        // //buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()+branch;
+        // buildParameters.BuildOutputRoot = $"D:\\CDN\\PC";
+        // buildParameters.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
+        // buildParameters.BuildTarget = buildTarget;
+        // buildParameters.BuildPipeline = EBuildPipeline.RawFileBuildPipeline.ToString();
+        // buildParameters.BuildMode = EBuildMode.ForceRebuild;
+        //
+        // buildParameters.PackageName = "RawFilePackage";
+        // buildParameters.PackageVersion = packageVersion;
+        // buildParameters.VerifyBuildingResult = true;
+        // buildParameters.FileNameStyle = EFileNameStyle.HashName;
+        // buildParameters.BuildinFileCopyOption = copyOption;
+        // buildParameters.BuildinFileCopyParams = string.Empty;
+        //
+        // // 执行构建
+        // RawFileBuildPipeline pipeline = new RawFileBuildPipeline();
+        // var buildResult = pipeline.Run(buildParameters, true);
+        // if (buildResult.Success)
+        // {
+        //     Debug.Log($"配置AB构建成功 : {buildResult.OutputPackageDirectory}");
+        //     configPackageParameters = buildParameters;
+        // }
+        // else
+        // {
+        //     throw new Exception($"配置AB构建失败 : {buildResult.ErrorInfo}");
+        // }
     }
 
     /// <summary>
@@ -221,6 +216,7 @@ public class BuildHelper
     private static void SaveVersion(string versionString) {
         Debug.Log($"更新版本文件，当前版本：{versionString}");
         File.WriteAllText(Application.streamingAssetsPath + VersionFileName, versionString);
+        File.Copy(Application.streamingAssetsPath + VersionFileName, $"D:\\CDN\\StandaloneWindows64\\Version\\{VersionFileName}", true);
     }
     
     /// <summary>

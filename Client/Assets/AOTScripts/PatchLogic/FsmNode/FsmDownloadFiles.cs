@@ -28,20 +28,22 @@ public class FsmDownloadFiles : IStateNode
 	{
 	}
 
-	async UniTask BeginDownload()
-	{
-		var downloader = PatchManager.Instance.Downloader;
-
-		// 注册下载回调
-		downloader.OnDownloadErrorCallback = PatchEventDefine.WebFileDownloadFailed.SendEventMessage;
-		downloader.OnDownloadProgressCallback = PatchEventDefine.DownloadProgressUpdate.SendEventMessage;
-		downloader.BeginDownload();
-		await downloader.ToUniTask();
-
-		// 检测下载结果
-		if (downloader.Status != EOperationStatus.Succeed)
-			return;
-
+	async UniTask BeginDownload() {
+		var downloaders = PatchManager.Instance.Downloaders;
+		foreach (var downloader in downloaders) {
+			// 注册下载回调
+			downloader.OnDownloadErrorCallback = PatchEventDefine.WebFileDownloadFailed.SendEventMessage;
+			downloader.OnDownloadProgressCallback = PatchEventDefine.DownloadProgressUpdate.SendEventMessage;
+			downloader.BeginDownload();
+			await downloader.ToUniTask();
+			// 检测下载结果
+			if (downloader.Status != EOperationStatus.Succeed) {
+				//TODO: 失败处理
+				Debug.LogError("下载失败");
+				return;
+			}
+		}
+		
 		_machine.ChangeState<FsmLoadHotUpdateDll>();
 	}
 }

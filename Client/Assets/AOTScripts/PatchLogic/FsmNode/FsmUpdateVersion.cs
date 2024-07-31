@@ -29,26 +29,25 @@ internal class FsmUpdateVersion : IStateNode
 	{
 	}
 
-	async UniTask GetStaticVersion()
-	{
+	async UniTask GetStaticVersion() {
+		PatchManager.Instance.PackageVersions.Clear();
 		//yield return new WaitForSecondsRealtime(0.5f);
-
-		var package = YooAssets.GetPackage(PublicData.DefaultPackageName);
-		var package2 = YooAssets.GetPackage(PublicData.RawFilePackage);
-		var operation = package.UpdatePackageVersionAsync();
-		var operation2 = package2.UpdatePackageVersionAsync();
-		await operation.ToUniTask();
-		await operation2.ToUniTask();
-		if (operation.Status == EOperationStatus.Succeed &&　operation2.Status == EOperationStatus.Succeed)
-		{
-			PatchManager.Instance.PackageVersion = operation.PackageVersion;
-			PatchManager.Instance.DllPackageVersion = operation2.PackageVersion;
-			_machine.ChangeState<FsmUpdateManifest>();
+		foreach (var pkg in PublicData.Packages) {
+			var package = YooAssets.GetPackage(PublicData.DefaultPackageName);
+			var operation = package.UpdatePackageVersionAsync();
+			await operation.ToUniTask();
+			
+			if (operation.Status == EOperationStatus.Succeed) {
+				PatchManager.Instance.PackageVersions.Add(operation.PackageVersion);
+			}
+			else {
+				Debug.LogWarning(operation.Error);
+				PatchManager.Instance.PackageVersions.Clear();
+				PatchEventDefine.PackageVersionUpdateFailed.SendEventMessage();
+				return;
+			}
 		}
-		else
-		{
-			Debug.LogWarning(operation.Error);
-			PatchEventDefine.PackageVersionUpdateFailed.SendEventMessage();
-		}
+		
+		_machine.ChangeState<FsmUpdateManifest>();
 	}
 }

@@ -29,23 +29,19 @@ public class FsmUpdateManifest : IStateNode
 	{
 	}
 
-	async UniTask UpdateManifest()
-	{
+	async UniTask UpdateManifest() {
 		bool savePackageVersion = true;
-		var package = YooAssets.GetPackage(PublicData.DefaultPackageName);
-		var operation = package.UpdatePackageManifestAsync(PatchManager.Instance.PackageVersion, savePackageVersion);
-		await operation.ToUniTask();
-		var package2 = YooAssets.GetPackage(PublicData.RawFilePackage);
-		var operation2 = package2.UpdatePackageManifestAsync(PatchManager.Instance.DllPackageVersion, savePackageVersion);
-		await operation2.ToUniTask();
-		if(operation.Status == EOperationStatus.Succeed &&　operation2.Status == EOperationStatus.Succeed)
-		{
+		for (int i = 0; i<PublicData.Packages.Count; ++i) {
+			var package = YooAssets.GetPackage(PublicData.Packages[i]);
+			var operation = package.UpdatePackageManifestAsync(PatchManager.Instance.PackageVersions[i], savePackageVersion);
+			await operation.ToUniTask();
+			if(operation.Status != EOperationStatus.Succeed) {
+				Debug.LogWarning(operation.Error);
+				PatchEventDefine.PatchManifestUpdateFailed.SendEventMessage();
+			}
+			
 			_machine.ChangeState<FsmCreateDownloader>();
 		}
-		else
-		{
-			Debug.LogWarning(operation.Error);
-			PatchEventDefine.PatchManifestUpdateFailed.SendEventMessage();
-		}
+
 	}
 }

@@ -33,7 +33,7 @@ internal class FsmUpdateVersion : IStateNode
 	{
 		//yield return new WaitForSecondsRealtime(0.5f);
 
-		var package = YooAssets.GetPackage(PublicData.PackageName);
+		var package = YooAssets.GetPackage(PublicData.DefaultPackageName);
 		var operation = package.UpdatePackageVersionAsync();
 		await operation.ToUniTask();
 

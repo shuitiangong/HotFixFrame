@@ -37,7 +37,7 @@ internal class FsmInitialize : IStateNode
 		var playMode = PatchManager.Instance.PlayMode;
 
 		// 创建默认的资源包
-		string packageName = PublicData.PackageName;
+		string packageName = PublicData.DefaultPackageName;
 		EDefaultBuildPipeline buildPipeline = PublicData.BuildPipeline;
 		var package = YooAssets.TryGetPackage(packageName);
 		if (package == null)
@@ -76,14 +76,18 @@ internal class FsmInitialize : IStateNode
 		// 联机运行模式
 		if (playMode == EPlayMode.HostPlayMode)
 		{
-			string defaultHostServer = GetHostServerURL();
-			string fallbackHostServer = GetHostServerURL();
+			string defaultHostServer = GetHostServerURL(PublicData.DefaultPackageName);
+			string fallbackHostServer = GetHostServerURL(PublicData.DefaultPackageName);
 			var createParameters = new HostPlayModeParameters();
 			createParameters.DecryptionServices = new FileStreamDecryption();
 			createParameters.BuildinQueryServices = new GameQueryServices();
 			createParameters.RemoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
 			initializationOperation = package.InitializeAsync(createParameters);
-			initializationOperation2 = rawPackage.InitializeAsync(createParameters);
+			var createParameters2 = new HostPlayModeParameters();
+			createParameters2.DecryptionServices = new FileStreamDecryption();
+			createParameters2.BuildinQueryServices = new GameQueryServices();
+			createParameters2.RemoteServices = new RemoteServices(GetHostServerURL(PublicData.RawFilePackage), GetHostServerURL(PublicData.RawFilePackage));
+			initializationOperation2 = rawPackage.InitializeAsync(createParameters2);
 		}
 
 		await initializationOperation.ToUniTask();
@@ -103,7 +107,7 @@ internal class FsmInitialize : IStateNode
 	/// <summary>
 	/// 获取资源服务器地址
 	/// </summary>
-	private string GetHostServerURL()
+	private string GetHostServerURL(string packageName)
 	{
 		//string hostServerIP = "http://10.0.2.2"; //安卓模拟器地址
 		string hostServerIP = HttpHelper.HttpHost;
@@ -111,11 +115,11 @@ internal class FsmInitialize : IStateNode
 
 #if UNITY_EDITOR
 		if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.Android)
-			return $"{hostServerIP}/CDN/Android/{PublicData.PackageName}/{gameVersion}";
+			return $"{hostServerIP}/CDN/Android/{packageName}/{gameVersion}";
 		else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.iOS)
-			return $"{hostServerIP}/CDN/IPhone/{PublicData.PackageName}/{gameVersion}";
+			return $"{hostServerIP}/CDN/IPhone/{packageName}/{gameVersion}";
 		else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.WebGL)
-			return $"{hostServerIP}/CDN/WebGL/{PublicData.PackageName}/{gameVersion}";
+			return $"{hostServerIP}/CDN/WebGL/{packageName}/{gameVersion}";
 		else
 			return $"{hostServerIP}/CDN/PC/{gameVersion}";
 #else

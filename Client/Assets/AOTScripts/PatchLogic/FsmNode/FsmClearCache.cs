@@ -18,7 +18,7 @@ internal class FsmClearCache : IStateNode
 	async UniTask IStateNode.OnEnter()
 	{
 		PatchEventDefine.PatchStatesChange.SendEventMessage("清理未使用的缓存文件！");
-		var package = YooAsset.YooAssets.GetPackage(PublicData.PackageName);
+		var package = YooAsset.YooAssets.GetPackage(PublicData.DefaultPackageName);
 		await package.ClearUnusedCacheFilesAsync();
 		_machine.ChangeState<FsmPatchDone>();
 	}

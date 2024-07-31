@@ -32,7 +32,7 @@ public class FsmUpdateManifest : IStateNode
 	async UniTask UpdateManifest()
 	{
 		bool savePackageVersion = true;
-		var package = YooAssets.GetPackage(PublicData.PackageName);
+		var package = YooAssets.GetPackage(PublicData.DefaultPackageName);
 		var operation = package.UpdatePackageManifestAsync(PatchManager.Instance.PackageVersion, savePackageVersion);
 		await operation.ToUniTask();
 

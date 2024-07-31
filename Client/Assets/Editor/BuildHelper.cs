@@ -164,7 +164,7 @@ public class BuildHelper
         buildParameters.PackageName = "RawFilePackage";
         buildParameters.PackageVersion = packageVersion;
         buildParameters.VerifyBuildingResult = true;
-        buildParameters.FileNameStyle = EFileNameStyle.BundleName;
+        buildParameters.FileNameStyle = EFileNameStyle.HashName;
         buildParameters.BuildinFileCopyOption = copyOption;
         buildParameters.BuildinFileCopyParams = string.Empty;
 
@@ -297,7 +297,7 @@ public class BuildHelper
         AssetDatabase.Refresh();
         BuildAndCopyHotUpdateDll();
         try {
-            BuildInternal(BuildTarget.StandaloneWindows64, GetBuildTime(), false,EBuildinFileCopyOption.ClearAndCopyAll);
+            BuildInternal(BuildTarget.StandaloneWindows64, GetBuildTime(), false,EBuildinFileCopyOption.None);
         } catch (Exception e) {
             Debug.LogError(e);
             Debug.LogError("打包中断");

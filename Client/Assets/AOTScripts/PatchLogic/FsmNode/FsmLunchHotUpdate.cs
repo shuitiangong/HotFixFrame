@@ -30,7 +30,7 @@ internal class FsmLunchHotUpdate : IStateNode
 	async UniTask Prepare()
 	{
 		
-		var package = YooAssets.GetPackage(PublicData.PackageName);
+		var package = YooAssets.GetPackage(PublicData.DefaultPackageName);
 		var loadHandle = package.LoadAssetAsync<GameObject>("HotUpdateLuncher");
 		await loadHandle.ToUniTask();
 		if(loadHandle.Status== EOperationStatus.Succeed)

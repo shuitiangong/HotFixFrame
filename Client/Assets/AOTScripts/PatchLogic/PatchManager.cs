@@ -19,7 +19,7 @@ public class PatchManager : SingletonInstance<PatchManager>, ISingleton
 	/// 包裹的版本信息
 	/// </summary>
 	public string PackageVersion { set; get; }
-
+	public string DllPackageVersion { set; get; }
 	/// <summary>
 	/// 下载器
 	/// </summary>

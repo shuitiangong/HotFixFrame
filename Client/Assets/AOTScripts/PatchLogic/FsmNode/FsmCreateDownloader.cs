@@ -34,6 +34,7 @@ public class FsmCreateDownloader : IStateNode
 		//TODO:搬到appsetting
 		int downloadingMaxNum = 10;
 		int failedTryAgain = 3;
+		//创建多个下载器
 		var downloader = YooAssets.CreateResourceDownloader(downloadingMaxNum, failedTryAgain);
 		PatchManager.Instance.Downloader = downloader;
 

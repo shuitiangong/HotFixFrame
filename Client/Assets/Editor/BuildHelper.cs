@@ -16,6 +16,7 @@ using YooAsset;
 using Newtonsoft.Json;
 using System.Xml;
 using HybridCLR.Editor.Settings;
+using Unity.VisualScripting;
 using UnityEditor.Build.Reporting;
 using BuildResult = UnityEditor.Build.Reporting.BuildResult;
 
@@ -111,8 +112,9 @@ public class BuildHelper
         //构建参数
         //目前使用内建构建就能满足需求
         BuiltinBuildParameters buildParameters = new BuiltinBuildParameters();
+        //buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()+ branch;
+        buildParameters.BuildOutputRoot = $"D:\\CDN\\PC\\{packageVersion}";
         buildParameters.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
-        buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()+ branch;
         buildParameters.BuildTarget = buildTarget;
         buildParameters.BuildPipeline = EBuildPipeline.BuiltinBuildPipeline.ToString();
         // For the new build system, unity always need BuildAssetBundleOptions.CollectDependencies and BuildAssetBundleOptions.DeterministicAssetBundle
@@ -155,7 +157,8 @@ public class BuildHelper
     private static void BuildConfig(BuildTarget buildTarget, string packageVersion,string branch,EBuildinFileCopyOption copyOption)
     {
         RawFileBuildParameters buildParameters = new RawFileBuildParameters();
-        buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()+branch;
+        //buildParameters.BuildOutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot()+branch;
+        buildParameters.BuildOutputRoot = $"D:\\CDN\\PC\\{packageVersion}";
         buildParameters.BuildinFileRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
         buildParameters.BuildTarget = buildTarget;
         buildParameters.BuildPipeline = EBuildPipeline.RawFileBuildPipeline.ToString();
@@ -190,7 +193,36 @@ public class BuildHelper
         int totalMinutes = DateTime.Now.Hour * 60 + DateTime.Now.Minute;
         return DateTime.Now.ToString("yyyy-MM-dd") + "-" + totalMinutes;
     }
+    
+    /// <summary>
+    /// 构建版本相关 build包体 命名规则
+    /// </summary>
+    /// <returns></returns>
+    private static string GetBuildVerision() {
+        var versionString = File.ReadAllText(Application.streamingAssetsPath + VersionFileName);
+        return versionString;
+    }
 
+    /// <summary>
+    /// 获取加1之后的版本号
+    /// </summary>
+    private static string GetNewVersion() {
+        var versionString = File.ReadAllText(Application.streamingAssetsPath + VersionFileName);
+        var versionStringArray = versionString.Split(".");
+        var lastNum = int.Parse(versionStringArray[versionStringArray.Length - 1]);
+        versionStringArray[versionStringArray.Length - 1] = (lastNum + 1).ToString();
+        string res = "";
+        for (int i = 0; i < versionStringArray.Length; ++i) {
+            res += i == 0 ? versionStringArray[i] : $".{versionStringArray[i]}";
+        }
+        return res;
+    }
+
+    private static void SaveVersion(string versionString) {
+        Debug.Log($"更新版本文件，当前版本：{versionString}");
+        File.WriteAllText(Application.streamingAssetsPath + VersionFileName, versionString);
+    }
+    
     /// <summary>
     /// Unity打包流程
     /// </summary>
@@ -272,7 +304,7 @@ public class BuildHelper
         if (summary.result == BuildResult.Succeeded) {
             Debug.Log($"Build success: {summary.totalSize / 1024 / 1024} MB");
         } else {
-            Debug.Log($"Build Failed" + summary.result);
+            throw new Exception($"Build Failed" + summary.result);
         }
         EditorUserBuildSettings.exportAsGoogleAndroidProject = false;
     }
@@ -296,15 +328,24 @@ public class BuildHelper
     public static void AutomationBuild() {
         AssetDatabase.Refresh();
         BuildAndCopyHotUpdateDll();
+        
+        var ver = GetNewVersion();
         try {
-            BuildInternal(BuildTarget.StandaloneWindows64, GetBuildTime(), false,EBuildinFileCopyOption.None);
+            BuildInternal(BuildTarget.StandaloneWindows64, ver, true,EBuildinFileCopyOption.None);
         } catch (Exception e) {
             Debug.LogError(e);
             Debug.LogError("打包中断");
             return;
         }
         AssetDatabase.Refresh();
-        BuildImp(BuildTargetGroup.Standalone, BuildTarget.StandaloneWindows64, $"{Application.dataPath}/../Build/Windows/{Application.productName}-{GetBuildTime()}-Windows.exe");
+        try {
+            BuildImp(BuildTargetGroup.Standalone, BuildTarget.StandaloneWindows64, $"{Application.dataPath}/../Build/Windows/{Application.productName}-{GetBuildTime()}-Windows.exe");
+        }
+        catch (Exception e) {
+            Debug.Log(e);
+            return;
+        }
+        SaveVersion(ver);
     }
 
     [MenuItem("BuildTools/一键打包Android", false, 30)]
@@ -312,7 +353,7 @@ public class BuildHelper
         AssetDatabase.Refresh();
         BuildAndCopyHotUpdateDll();
         try {
-            BuildInternal(BuildTarget.Android, GetBuildTime(), false,EBuildinFileCopyOption.ClearAndCopyAll);
+            BuildInternal(BuildTarget.Android, GetBuildVerision(), false,EBuildinFileCopyOption.ClearAndCopyAll);
         } catch (Exception e) {
             Debug.LogError(e);
             Debug.LogError("打包中断");
@@ -327,7 +368,7 @@ public class BuildHelper
         AssetDatabase.Refresh();
         BuildAndCopyHotUpdateDll();
         try {
-            BuildInternal(BuildTarget.iOS, GetBuildTime(), false,EBuildinFileCopyOption.ClearAndCopyAll);
+            BuildInternal(BuildTarget.iOS, GetBuildVerision(), false,EBuildinFileCopyOption.ClearAndCopyAll);
         }catch(Exception e) {
             Debug.LogError(e);
             Debug.LogError("打包中断");
@@ -550,7 +591,7 @@ public class BuildHelper
     [MenuItem("BuildTools/创建版本文件")]
     public static void CreateVersionFile()
     {
-        string version = "1.0.0";
+        string version = "v1.0.0";
         File.WriteAllText(Application.streamingAssetsPath + VersionFileName, version);
         Debug.Log("创建版本文件完成，当前版本为:" + version);
     }

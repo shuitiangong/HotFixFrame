@@ -113,24 +113,13 @@ internal class FsmInitialize : IStateNode
 		string hostServerIP = HttpHelper.HttpHost;
 		string gameVersion = PublicData.Version;
 
-#if UNITY_EDITOR
-		if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.Android)
-			return $"{hostServerIP}/CDN/Android/{packageName}/{gameVersion}";
-		else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.iOS)
-			return $"{hostServerIP}/CDN/IPhone/{packageName}/{gameVersion}";
-		else if (UnityEditor.EditorUserBuildSettings.activeBuildTarget == UnityEditor.BuildTarget.WebGL)
-			return $"{hostServerIP}/CDN/WebGL/{packageName}/{gameVersion}";
+		if (PublicData.platform == TargetPlatform.Android)
+			return $"{hostServerIP}/CDN/Android/{gameVersion}/{packageName}";
+		else if (PublicData.platform == TargetPlatform.IOS)
+			return $"{hostServerIP}/CDN/IPhone/{gameVersion}/{packageName}";
+		else if (PublicData.platform == TargetPlatform.WebGL)
+			return $"{hostServerIP}/CDN/WebGL/{gameVersion}/{packageName}";
 		else
-			return $"{hostServerIP}/CDN/PC/{gameVersion}";
-#else
-		if (Application.platform == RuntimePlatform.Android)
-			return $"{hostServerIP}/CDN/Android/{PublicData.PackageName}/{gameVersion}";
-		else if (Application.platform == RuntimePlatform.IPhonePlayer)
-			return $"{hostServerIP}/CDN/IPhone/{PublicData.PackageName}/{gameVersion}";
-		else if (Application.platform == RuntimePlatform.WebGLPlayer)
-			return $"{hostServerIP}/CDN/WebGL/{PublicData.PackageName}/{gameVersion}";
-		else
-			return $"{hostServerIP}/CDN/PC/{PublicData.PackageName}/{gameVersion}";
-#endif
+			return $"{hostServerIP}/CDN/PC/{gameVersion}/{packageName}";
 	}
 }
